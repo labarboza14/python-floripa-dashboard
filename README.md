@@ -31,15 +31,6 @@ python-floripa-dashboard/
 O dashboard é um único arquivo autocontido: HTML, estilos e a biblioteca de gráficos (Chart.js) estão embutidos nele. Não depende de internet, CDN ou build step — abre em qualquer navegador, mesmo offline.
 
 
-🚀 Como publicar (GitHub Pages)
-
-Suba o index.html na raiz do repositório (ou dentro de uma pasta /docs).
-Vá em Settings → Pages no repositório.
-Em Branch, selecione main e a pasta onde está o index.html (/root ou /docs).
-Salve. Em ~1 minuto o site estará no ar em:
-https://SEU-USUARIO.github.io/NOME-DO-REPO/
-
-
 🔄 Como atualizar quando sair um novo evento
 Os números do dashboard não são ao vivo — são um retrato gerado a partir da base de dados em um momento específico. Fluxo de atualização:
 
