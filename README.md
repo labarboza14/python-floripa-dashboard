@@ -1,66 +1,86 @@
-Python Floripa — Radiografia da Comunidade
+# Python Floripa — Radiografia da Comunidade
 
-Dashboard interativo com a análise consolidada dos meetups da Python Floripa: funil de inscrições, retenção, perfil de engajamento e canais de aquisição — construído a partir dos dados brutos de inscrição e check-in de 13 eventos (mar/2025 – mai/2026).
+Dashboard interativo e dinâmico com a análise analítica contínua dos meetups da **Python Floripa**: funil de conversão, retenção histórica, perfil de engajamento, categorização de palestras e canais de aquisição.
 
-🔗 Ver o dashboard ao vivo: https://labarboza14.github.io/python-floripa-dashboard/
+🔗 **Acesse o Dashboard ao vivo:** [https://labarboza14.github.io/python-floripa-dashboard/](https://labarboza14.github.io/python-floripa-dashboard/)
 
+---
 
-📊 O que tem aqui
+## 📌 Visão Geral
 
-SeçãoO que mostraFunil por eventoInscrições vs. check-ins vs. taxa de presença, evento a eventoRetenção% de participantes que voltaram em algum evento futuroPerfil da comunidadeDistribuição de 1.256 participantes por nível de engajamento (nunca compareceu → core community)Qualidade do retornoQuando as pessoas voltam: no próximo evento, em 2–3 eventos, ou nuncaProgramaçãoTemas mais frequentes nas palestras (14 categorias, 38 talks)Perfil & aquisiçãoDe onde vêm os participantes: cidade, faixa etária, canal (Instagram, Google, site próprio etc.) e qual canal converte melhorFidelidade individual & localRanking dos 20 participantes mais assíduos + comparação de presença por local de evento
+O projeto consolida os dados de inscrições e check-ins dos meetups presenciais da comunidade, integrando a esteira analítica desde a coleta bruta até a visualização pública. 
 
+A arquitetura opera de forma **reativa e desacoplada**: a interface web consome dinamicamente o arquivo estruturado `dados.json`, refletindo automaticamente métricas acumuladas, evolução temporal e rankings sem necessidade de alterações manuais no código-fonte da aplicação.
 
-🧠 Glossário rápido (pra quem não viu a base de dados)
-Pensado pra quem só vai olhar o dashboard, sem contexto prévio.
+---
 
-Taxa de presença: % de inscritos que efetivamente fizeram check-in no evento.
-Taxa de retenção: de quem foi a um evento, quantos % voltaram em qualquer evento futuro.
-Retorno imediato / curto / longo prazo: se a pessoa voltou logo no próximo evento, em 2–3 eventos depois, ou só bem mais tarde.
-Perfil da comunidade: classificação por frequência acumulada —
-Nunca compareceu → Evento único → Recorrente → Frequente → Alta recorrência → Core community.
-Perfil do evento: Aquisição (maioria de gente nova) vs. Equilibrado (mix de novos e recorrentes).
-Canal de origem: por onde a pessoa chegou até a inscrição (Instagram, Google, link direto do site, etc.).
+## 📊 Dimensões e Indicadores
 
+| Dimensão | Indicadores | Objetivo |
+| :--- | :--- | :--- |
+| **Funil por Evento** | Inscrições, check-ins válidos e taxa de presença (%) | Acompanhar a conversão real e a perda entre inscrição e presença. |
+| **Retenção Histórica** | Retorno imediato (próximo evento), curto prazo (2–3 edições) e longo prazo | Medir a capacidade de retenção contínua da comunidade ao longo do tempo. |
+| **Perfil da Comunidade** | Distribuição: *Evento Único*, *Recorrente*, *Frequente*, *Alta Recorrência* e *Core Community* | Monitorar a maturidade da base e o crescimento de membros ativos. |
+| **Grade de Conteúdo** | Volume de palestras por categoria temática | Identificar tendências técnicas e diversidade dos temas abordados. |
+| **Fidelidade & Assiduidade** | Ranking dos participantes mais frequentes e distribuição por local | Reconhecer membros assíduos com proteção de privacidade. |
 
-🗂️ Estrutura do projeto
+---
 
+## 🏗️ Arquitetura da Solução
+
+```mermaid
+flowchart LR
+    A[Relatórios Sympla .xlsx] --> B[(Google Drive /eventos)]
+    C[Planilha de Controle /Temas] --> D[Pipeline Google Apps Script]
+    B --> D
+    D -->|Commit Automático API REST| E[(GitHub Repo /dados.json)]
+    E -->|Deploy Contínuo| F[GitHub Pages /index.html]
+Ingestão: Os relatórios de participantes (inscrições e check-ins) são armazenados em pasta dedicada no Google Drive.
+
+Processamento & Governança: O pipeline desenvolvido em Google Apps Script cruza as participações com a base de temas, normaliza registros, calcula indicadores de assiduidade e aplica tratamento de anonimização.
+
+Deploy Automatizado: O script compila os dados consolidados e executa commits automatizados do arquivo dados.json via GitHub REST API.
+
+Camada de Apresentação: O frontend consome o JSON atualizado e renderiza os gráficos e tabelas de forma reativa.
+
+🗂️ Estrutura do Repositório
+Plaintext
 python-floripa-dashboard/
-├── index.html          # dashboard completo (HTML + CSS + JS, tudo em 1 arquivo)
+├── index.html          # Aplicação web estática (Dashboard interativo com Chart.js)
+├── dados.json          # Base agregada e anonimizada gerada pelo pipeline
+└── README.md           # Documentação técnica e operacional do projeto
+🔄 Fluxo de Atualização Operacional
+Para registrar uma nova edição realizada da comunidade:
 
+Salvar o arquivo de inscrições e presenças na pasta do Google Drive (/eventos).
 
-O dashboard é um único arquivo autocontido: HTML, estilos e a biblioteca de gráficos (Chart.js) estão embutidos nele. Não depende de internet, CDN ou build step — abre em qualquer navegador, mesmo offline.
+Cadastrar as palestras do encontro na aba Temas da planilha de controle.
 
+Acionar o menu 🚀 Python Floripa > Atualizar Dashboard no GitHub (ou botão de controle direto na planilha).
 
-🔄 Como atualizar quando sair um novo evento
-Os números do dashboard não são ao vivo — são um retrato gerado a partir da base de dados em um momento específico. Fluxo de atualização:
+O pipeline recalcula as métricas históricas, atualiza os registros de auditoria e comita o dados.json. O GitHub Pages publica a nova versão em poucos segundos.
 
+🔒 Privacidade e Governança de Dados (LGPD)
+Em conformidade com as boas práticas de proteção de dados (Lei 13.709/2018):
 
-Rode novamente o notebook de análise (Colab) da comunidade, incluindo os dados do novo evento. Ele reprocessa as tabelas de apoio no Google Drive (analise_eventos, evolucao, retencao_eventos, perfil_comunidade, etc.).
-Gere uma nova versão do index.html a partir dessas tabelas atualizadas.
-Substitua o index.html no repositório (upload manual ou git push) — o GitHub Pages atualiza automaticamente.
+Mascaramento de Identificadores: E-mails têm o nome de usuário parcialmente ofuscado (ex.: car***@dominio.com).
 
+Anonimização no Ranking: Nomes de participantes são exibidos estritamente no formato Primeiro Nome + Inicial do Sobrenome (ex.: Mariana S.).
 
-🔒 Privacidade e dados
+Campos Críticos: Telefones, documentos e e-mails integrais são estritamente restritos à base operacional interna e nunca exportados para a camada pública.
 
-Este projeto não expõe dados sensíveis no sentido legal do termo (LGPD, Art. 5º, XIII) — não há informações de saúde, biometria, religião, orientação sexual, opinião política ou dado similar.
+Agregação: Dados demográficos e de aquisição são expostos exclusivamente em formato estatístico consolidado.
 
-Ainda assim, há dados pessoais envolvidos, tratados com os seguintes cuidados:
+🛠️ Tecnologias Utilizadas
+Frontend: HTML5, CSS3, JavaScript (ES6+), Chart.js
 
-E-mails: mascarados em qualquer lugar do dashboard (ex.: fe***@gmail.com).
-Nomes no ranking de participação: reduzidos a primeiro nome + inicial do sobrenome (ex.: "Felipe A."), para diminuir a identificabilidade mantendo o reconhecimento dentro da comunidade.
-Telefones, e-mails completos e demais campos de contato da base bruta: nunca entram neste dashboard público — ficam apenas na planilha original de uso interno da organização.
-Dados agregados (cidade, faixa etária, canal de origem etc.): apresentados apenas em totais e percentuais, sem vínculo a indivíduos.
+Tipografia: Google Fonts (Fredoka, IBM Plex Sans, IBM Plex Mono)
 
-Se em algum momento a comunidade decidir que mesmo "primeiro nome + inicial" é identificável demais (grupos pequenos, nomes incomuns), o caminho mais seguro é substituir por posição no ranking sem nome (#1, #2...) ou por apelido escolhido pela própria pessoa.
+Automação & Integração: Google Apps Script, Google Drive API, GitHub REST API
 
+Hospedagem & CI/CD: GitHub Pages
 
-🛠️ Stack
+🤝 Contribuições e Suporte
+Projeto mantido pela comunidade Python Floripa.
 
-HTML + CSS puro
-Chart.js v4 (embutido no arquivo, sem CDN)
-Fontes: IBM Plex Sans / IBM Plex Mono / Fredoka (Google Fonts)
-Dados processados via notebook Python (Google Colab) a partir dos exports brutos de inscrição/check-in
-
-🤝 Sobre
-
-Projeto mantido pela comunidade Python Floripa — meetups gratuitos de Python em Florianópolis e região. Dúvidas ou sugestões sobre os dados, abra uma issue neste repositório.
+Sugestões de novas análises, melhorias de interface ou relatos de inconsistências podem ser enviados através das Issues deste repositório.
