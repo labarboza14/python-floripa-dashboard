@@ -1,0 +1,512 @@
+{
+  "metadados": {
+    "atualizado_em": "2026-10-14T15:55:26.487Z",
+    "total_eventos": 14,
+    "total_inscricoes": 2093,
+    "total_checkins": 877,
+    "taxa_presenca_geral": 41.9,
+    "participantes_unicos": 568
+  },
+  "eventos": [
+    {
+      "evento_id": 84,
+      "nome_arquivo": "evento_84.xlsx",
+      "inscricoes": 138,
+      "checkins": 63,
+      "taxa_presenca": 45.7,
+      "local_evento": "Python Floripa UNIVALI",
+      "data_evento": "2025-03-30T01:19:00.000Z",
+      "temas": [
+        {
+          "palestra": "Documentação bonita e organizada, conheça ferramentas que vão transformar a relação do time com a documentação",
+          "categoria": "Qualidade & Processos"
+        },
+        {
+          "palestra": "Inglês, Serverless e GenAI: Como um desafio de aprendizado se transformou em uma arquitetura serverless com GenAI",
+          "categoria": "Cloud & DevOps"
+        },
+        {
+          "palestra": "Construindo Pontes: Integrando AI Generativa com team topologies",
+          "categoria": "Inteligência Artificial"
+        }
+      ]
+    },
+    {
+      "evento_id": 85,
+      "nome_arquivo": "evento_85.xlsx",
+      "inscricoes": 139,
+      "checkins": 62,
+      "taxa_presenca": 44.6,
+      "local_evento": "Python Floripa UNICESUSC",
+      "data_evento": "2025-04-27T01:09:00.000Z",
+      "temas": [
+        {
+          "palestra": "Dados e Produto: por que as duas areas andam lado a lado",
+          "categoria": "Dados"
+        },
+        {
+          "palestra": "IA Além do hype: onde brilha, onde falga, como extrair o máximo em produção",
+          "categoria": "Inteligência Artificial"
+        },
+        {
+          "palestra": "devSecOps para projetos python",
+          "categoria": "Segurança"
+        }
+      ]
+    },
+    {
+      "evento_id": 86,
+      "nome_arquivo": "evento_86.xlsx",
+      "inscricoes": 169,
+      "checkins": 81,
+      "taxa_presenca": 47.9,
+      "local_evento": "Python Floripa SEBRAE",
+      "data_evento": "2025-05-31T21:16:00.000Z",
+      "temas": [
+        {
+          "palestra": "Ninguém trabalha sozinho",
+          "categoria": "Carreira & Soft Skills"
+        },
+        {
+          "palestra": "Desmistificando Blockchain",
+          "categoria": "Blockchain"
+        },
+        {
+          "palestra": "Python no Azure: O segredo contra falhas FaaS",
+          "categoria": "Cloud & DevOps"
+        }
+      ]
+    },
+    {
+      "evento_id": 87,
+      "nome_arquivo": "evento_87.xlsx",
+      "inscricoes": 166,
+      "checkins": 55,
+      "taxa_presenca": 33.1,
+      "local_evento": "Python Floripa CODECON UNICESUSC",
+      "data_evento": "2025-06-28T22:23:00.000Z",
+      "temas": [
+        {
+          "palestra": "Além do Código: Soft Skills, Liderança e Bem-Estar para uma Carreira de Sucesso",
+          "categoria": "Carreira & Soft Skills"
+        },
+        {
+          "palestra": "Arquitetura Entrópica: Como Abraçar o Caos Sem Ser Engolido",
+          "categoria": "Arquitetura"
+        },
+        {
+          "palestra": "Inteligência Artificial com Banco de Dados",
+          "categoria": "Inteligência Artificial"
+        }
+      ]
+    },
+    {
+      "evento_id": 88,
+      "nome_arquivo": "evento_88.xlsx",
+      "inscricoes": 170,
+      "checkins": 80,
+      "taxa_presenca": 47.1,
+      "local_evento": "Python Floripa IFSC",
+      "data_evento": "2025-07-26T21:04:00.000Z",
+      "temas": [
+        {
+          "palestra": "Gerenciamento de Ambiente e Dependências em Python",
+          "categoria": "Python Fundamentals"
+        },
+        {
+          "palestra": "Débitos técnicos ocultos em sistemas de IA",
+          "categoria": "Inteligência Artificial"
+        },
+        {
+          "palestra": "Da ideia aos slides: como preparar e apresentar palestras interessantes e organizadas",
+          "categoria": "Carreira & Soft Skills"
+        }
+      ]
+    },
+    {
+      "evento_id": 89,
+      "nome_arquivo": "evento_89.xlsx",
+      "inscricoes": 198,
+      "checkins": 78,
+      "taxa_presenca": 39.4,
+      "local_evento": "Python Floripa UNIVALI",
+      "data_evento": "2025-08-31T00:07:00.000Z",
+      "temas": [
+        {
+          "palestra": "Git e Github para Humanos",
+          "categoria": "Open Source & Comunidade"
+        },
+        {
+          "palestra": "Reticulum: rede descentralizada open source em Python (com exemplos em codigo)",
+          "categoria": "Infraestrutura & Redes"
+        },
+        {
+          "palestra": "Banco de Dados como Serviço (BDaaS)",
+          "categoria": "Dados"
+        }
+      ]
+    },
+    {
+      "evento_id": 90,
+      "nome_arquivo": "evento_90.xlsx",
+      "inscricoes": 158,
+      "checkins": 68,
+      "taxa_presenca": 43,
+      "local_evento": "Python Floripa IFSC SJ",
+      "data_evento": "2025-09-27T21:08:00.000Z",
+      "temas": [
+        {
+          "palestra": "Do Caos ao Código: Pensamento Computacional Aplicado a Regras de Negócio em Python",
+          "categoria": "Backend"
+        },
+        {
+          "palestra": "Do Qubit à Aritmética: Como calcular a + b usando computadores quânticos?",
+          "categoria": "Computação Quântica"
+        },
+        {
+          "palestra": "Conversando com os dados da educação brasileira",
+          "categoria": "Dados"
+        }
+      ]
+    },
+    {
+      "evento_id": 91,
+      "nome_arquivo": "evento_91.xlsx",
+      "inscricoes": 107,
+      "checkins": 47,
+      "taxa_presenca": 43.9,
+      "local_evento": "Python Floripa UNICESUSC",
+      "data_evento": "2025-10-26T01:03:00.000Z",
+      "temas": [
+        {
+          "palestra": "Injetando JavaScript remotamente no admin de um CMS Django: A jornada até a descoberta da CVE-2025-29573",
+          "categoria": "Segurança"
+        },
+        {
+          "palestra": "\"CLOWNED\" (Cloud Owned) - Encadeando vulnerabilidades para obtenção da nuvem do alvo",
+          "categoria": "Segurança"
+        },
+        {
+          "palestra": "Transformando a qualidade em vantagem competitiva",
+          "categoria": "Qualidade & Processos"
+        }
+      ]
+    },
+    {
+      "evento_id": 92,
+      "nome_arquivo": "evento_92.xlsx",
+      "inscricoes": 171,
+      "checkins": 84,
+      "taxa_presenca": 49.1,
+      "local_evento": "Python Floripa HOSTGATOR",
+      "data_evento": "2026-02-02T20:51:00.000Z",
+      "temas": [
+        {
+          "palestra": "Como a IA está redefinindo a rotina do desenvolvedor",
+          "categoria": "Inteligência Artificial"
+        },
+        {
+          "palestra": "Brag document: um diario de bordo para a sua carreira",
+          "categoria": "Carreira & Soft Skills"
+        },
+        {
+          "palestra": "Vibe Coding com Devops: Usei IA para creiar meu site mas quem fez o deploy fui eu",
+          "categoria": "Cloud & DevOps"
+        }
+      ]
+    },
+    {
+      "evento_id": 93,
+      "nome_arquivo": "evento_93.xlsx",
+      "inscricoes": 177,
+      "checkins": 81,
+      "taxa_presenca": 45.8,
+      "local_evento": "Python Floripa UNISENAI",
+      "data_evento": "2026-03-01T01:50:00.000Z",
+      "temas": [
+        {
+          "palestra": "Quem é você na comunidade? Expectativas, presença e o que você constrói a disso",
+          "categoria": "Open Source & Comunidade"
+        },
+        {
+          "palestra": "Python Fora da Tela: Inovação Embarcada na Indústria",
+          "categoria": "Backend"
+        },
+        {
+          "palestra": "Otimize suas consultas: Evitando armadilhas comuns em ORMs Python",
+          "categoria": "Backend"
+        }
+      ]
+    },
+    {
+      "evento_id": 94,
+      "nome_arquivo": "evento_94.xlsx",
+      "inscricoes": 186,
+      "checkins": 60,
+      "taxa_presenca": 32.3,
+      "local_evento": "Python Floripa IFSC SJ",
+      "data_evento": "2026-03-29T00:25:00.000Z",
+      "temas": [
+        {
+          "palestra": "Você realmente precisa da IA? Limites, mitos e vantagens da Inteligência Artificial",
+          "categoria": "Inteligência Artificial"
+        },
+        {
+          "palestra": "MongoDB para humanos (e programadores)",
+          "categoria": "Dados"
+        },
+        {
+          "palestra": "Pesquisa Vetorial com MongoDB e Ollama",
+          "categoria": "Inteligência Artificial"
+        }
+      ]
+    },
+    {
+      "evento_id": 95,
+      "nome_arquivo": "evento_95.xlsx",
+      "inscricoes": 106,
+      "checkins": 46,
+      "taxa_presenca": 43.4,
+      "local_evento": "Python Floripa UNICESUSC",
+      "data_evento": "2026-04-26T00:06:00.000Z",
+      "temas": [
+        {
+          "palestra": "QUIC - A segurança do TCP com a velocidade do UDP",
+          "categoria": "Infraestrutura & Redes"
+        },
+        {
+          "palestra": "Arquitetura Limpa: Parando de juntar Lego com cola quente",
+          "categoria": "Arquitetura"
+        },
+        {
+          "palestra": "Blockchain aplicada: certificados na Solana",
+          "categoria": "Blockchain"
+        }
+      ]
+    },
+    {
+      "evento_id": 96,
+      "nome_arquivo": "evento_96.xlsx",
+      "inscricoes": 116,
+      "checkins": 53,
+      "taxa_presenca": 45.7,
+      "local_evento": "Python Floripa HOSTGATOR",
+      "data_evento": "2026-05-30T21:22:00.000Z",
+      "temas": [
+        {
+          "palestra": "Computação no pais das abstrações: Do binário ao concreto",
+          "categoria": "Comunidade"
+        },
+        {
+          "palestra": "Open Source x IA: Um panôrama das políticas atuais",
+          "categoria": "Open Source & Comunidade"
+        }
+      ]
+    },
+    {
+      "evento_id": 99,
+      "nome_arquivo": "evento_99",
+      "inscricoes": 92,
+      "checkins": 35,
+      "taxa_presenca": 38,
+      "local_evento": "Python Floripa IFSC SJ",
+      "data_evento": "2026-09-26T17:26:00.000Z",
+      "temas": [
+        {
+          "palestra": "Do voluntariado ao Portfólio: Desenvolvendo habilidades analiticas num projeto real",
+          "categoria": "Comunidade"
+        },
+        {
+          "palestra": "Agentes autónomos: Hermes, Grok Bot, Openclaw e Muse",
+          "categoria": "Agentes de Inteligência Artificial"
+        }
+      ]
+    }
+  ],
+  "perfis_comunidade": {
+    "Evento Único": 436,
+    "Recorrente (2-3)": 95,
+    "Frequente (4-6)": 25,
+    "Alta Recorrência (7-9)": 11,
+    "Core Community (10+)": 1
+  },
+  "categorias_palestras": {
+    "Qualidade & Processos": 2,
+    "Cloud & DevOps": 3,
+    "Inteligência Artificial": 7,
+    "Dados": 4,
+    "Segurança": 3,
+    "Carreira & Soft Skills": 4,
+    "Blockchain": 2,
+    "Arquitetura": 2,
+    "Python Fundamentals": 1,
+    "Open Source & Comunidade": 3,
+    "Infraestrutura & Redes": 2,
+    "Backend": 3,
+    "Computação Quântica": 1,
+    "Comunidade": 2,
+    "Agentes de Inteligência Artificial": 1
+  },
+  "ranking_top20": [
+    {
+      "nome": "Felipe A.",
+      "email": "fel***@gmail.com",
+      "participacoes": 10,
+      "primeiro_evento": 84,
+      "ultimo_evento": 95,
+      "periodo": "Ed. 84 – 95"
+    },
+    {
+      "nome": "Glória B.",
+      "email": "glo***@gmail.com",
+      "participacoes": 9,
+      "primeiro_evento": 84,
+      "ultimo_evento": 99,
+      "periodo": "Ed. 84 – 99"
+    },
+    {
+      "nome": "George T.",
+      "email": "tav***@gmail.com",
+      "participacoes": 9,
+      "primeiro_evento": 84,
+      "ultimo_evento": 99,
+      "periodo": "Ed. 84 – 99"
+    },
+    {
+      "nome": "Lucenara P.",
+      "email": "luc***@gmail.com",
+      "participacoes": 9,
+      "primeiro_evento": 84,
+      "ultimo_evento": 96,
+      "periodo": "Ed. 84 – 96"
+    },
+    {
+      "nome": "Sofia G.",
+      "email": "sof***@icloud.com",
+      "participacoes": 9,
+      "primeiro_evento": 84,
+      "ultimo_evento": 95,
+      "periodo": "Ed. 84 – 95"
+    },
+    {
+      "nome": "Rodrigo V.",
+      "email": "rod***@gmail.com",
+      "participacoes": 8,
+      "primeiro_evento": 85,
+      "ultimo_evento": 99,
+      "periodo": "Ed. 85 – 99"
+    },
+    {
+      "nome": "Jardel G.",
+      "email": "jar***@gmail.com",
+      "participacoes": 8,
+      "primeiro_evento": 87,
+      "ultimo_evento": 96,
+      "periodo": "Ed. 87 – 96"
+    },
+    {
+      "nome": "LEO D.",
+      "email": "mor***@gmail.com",
+      "participacoes": 8,
+      "primeiro_evento": 85,
+      "ultimo_evento": 96,
+      "periodo": "Ed. 85 – 96"
+    },
+    {
+      "nome": "Maria A.",
+      "email": "mar***@gmail.com",
+      "participacoes": 8,
+      "primeiro_evento": 84,
+      "ultimo_evento": 91,
+      "periodo": "Ed. 84 – 91"
+    },
+    {
+      "nome": "Lucas B.",
+      "email": "luc***@gmail.com",
+      "participacoes": 7,
+      "primeiro_evento": 84,
+      "ultimo_evento": 95,
+      "periodo": "Ed. 84 – 95"
+    },
+    {
+      "nome": "Daniel S.",
+      "email": "dan***@soaresmartins.com",
+      "participacoes": 7,
+      "primeiro_evento": 84,
+      "ultimo_evento": 95,
+      "periodo": "Ed. 84 – 95"
+    },
+    {
+      "nome": "Mateus O.",
+      "email": "mat***@gmail.com",
+      "participacoes": 7,
+      "primeiro_evento": 84,
+      "ultimo_evento": 94,
+      "periodo": "Ed. 84 – 94"
+    },
+    {
+      "nome": "Pedro G.",
+      "email": "pga***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 90,
+      "ultimo_evento": 99,
+      "periodo": "Ed. 90 – 99"
+    },
+    {
+      "nome": "Gildo O.",
+      "email": "1gi***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 87,
+      "ultimo_evento": 96,
+      "periodo": "Ed. 87 – 96"
+    },
+    {
+      "nome": "mateus c.",
+      "email": "mat***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 84,
+      "ultimo_evento": 96,
+      "periodo": "Ed. 84 – 96"
+    },
+    {
+      "nome": "Stefani D.",
+      "email": "ste***@hotmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 84,
+      "ultimo_evento": 92,
+      "periodo": "Ed. 84 – 92"
+    },
+    {
+      "nome": "Ester T.",
+      "email": "tav***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 84,
+      "ultimo_evento": 92,
+      "periodo": "Ed. 84 – 92"
+    },
+    {
+      "nome": "Albertina R.",
+      "email": "alb***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 84,
+      "ultimo_evento": 93,
+      "periodo": "Ed. 84 – 93"
+    },
+    {
+      "nome": "Rodrigo F.",
+      "email": "dig***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 84,
+      "ultimo_evento": 91,
+      "periodo": "Ed. 84 – 91"
+    },
+    {
+      "nome": "Giordano A.",
+      "email": "gio***@gmail.com",
+      "participacoes": 6,
+      "primeiro_evento": 87,
+      "ultimo_evento": 93,
+      "periodo": "Ed. 87 – 93"
+    }
+  ]
+}
